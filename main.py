@@ -1,8 +1,8 @@
 # coding: utf8
 # -*- coding: utf-8 -*-
-from Chatbot import Chatbot
+from chatbot import ChatBot
 
-Bot = Chatbot('Bot')
+Bot = ChatBot('Bot')
 while True:
     frase = Bot.escuta()
     resp = Bot.pensa(frase)
