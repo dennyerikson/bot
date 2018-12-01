@@ -2,6 +2,7 @@ import json
 import sys
 import os
 import subprocess as s
+from print_vg import sala_13, sala_14, sala_15, sala_17, sala_23
 #783162685:AAEtd_uP2bRQNmMQCeh9n0EyvERKd1TI684
 #FatVgbot
 
@@ -59,6 +60,26 @@ class ChatBot():
             return resp
         except:
             pass
+        if frase == 'print13':
+            sala_13()
+            return '13-Imprimindo..'
+
+        if frase == 'print14':
+            sala_14()
+            return '14-Imprimindo..'
+
+        if frase == 'print15':
+            sala_15()
+            return '15-Imprimindo..'
+
+        if frase == 'print17':
+            sala_17()
+            return '17-Imprimindo..'
+
+        if frase == 'print23':
+            sala_23()
+            return '23-Imprimindo..'
+
         return 'Não entendi'
 
     def pegaNome(self, nome):
